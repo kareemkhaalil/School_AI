@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.admin">
+    package="com.example.school_ai">
    <application
-        android:label="admin"
+        android:label="school_ai"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

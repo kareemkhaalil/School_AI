@@ -1,4 +1,4 @@
-package com.example.admin
+package com.example.school_ai
 
 import io.flutter.embedding.android.FlutterActivity
 

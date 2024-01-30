@@ -1,5 +1,5 @@
-import 'package:admin/models/MyFiles.dart';
-import 'package:admin/responsive.dart';
+import 'package:school_ai/models/MyFiles.dart';
+import 'package:school_ai/responsive.dart';
 import 'package:flutter/material.dart';
 
 import '../../../constants.dart';
