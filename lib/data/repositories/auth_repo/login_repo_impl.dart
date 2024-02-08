@@ -6,11 +6,7 @@ import 'package:school_ai/data/models/logged_user/logged_user.dart';
 import 'package:school_ai/data/repositories/auth_repo/login_repo.dart';
 
 class LoginRepoImpl extends LoginRepo {
-  final ApiServices apiServices;
-
-  LoginRepoImpl(
-    this.apiServices,
-  );
+  final ApiServices apiServices = ApiServices();
 
   @override
   Future<Either<Failure, LoggedUser>> login(

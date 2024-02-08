@@ -27,7 +27,7 @@ class DesktopBody extends StatelessWidget {
                     TextWidget(
                       text: '  School Ai',
                       textcolor: Colors.white,
-                      textsize: MediaQuery.of(context).size.width * 0.02,
+                      textsize: MediaQuery.of(context).size.width * 0.018,
                       fontWeight: FontWeight.w800,
                     ),
                   ],
@@ -42,36 +42,30 @@ class DesktopBody extends StatelessWidget {
                         TextWidget(
                           text: 'Welcome Back',
                           textcolor: Colors.grey,
-                          textsize: MediaQuery.of(context).size.width * 0.015,
+                          textsize: MediaQuery.of(context).size.width * 0.012,
                           fontWeight: FontWeight.normal,
                         ),
                         WSizedBox(wval: 0, hval: 0.02),
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            TextWidget(
-                              text: 'Login to your account',
-                              textcolor: Colors.white,
-                              textsize:
-                                  MediaQuery.of(context).size.width * 0.03,
-                              fontWeight: FontWeight.bold,
-                            ),
-                            Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.blue,
-                                shape: BoxShape.circle,
-                              ),
-                              height: 10,
-                              width: 10,
-                            ),
-                          ],
+                        TextWidget(
+                          text: 'Login to your account',
+                          textcolor: Colors.white,
+                          textsize: MediaQuery.of(context).size.width * 0.02,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        Container(
+                          decoration: const BoxDecoration(
+                            color: Colors.blue,
+                            shape: BoxShape.circle,
+                          ),
+                          height: 10,
+                          width: 10,
                         ),
                         WSizedBox(wval: 0, hval: 0.03),
                         WSizedBox(wval: 0, hval: 0.03),
                         const CustomTextField(
                             borderradius: 20,
                             bordercolor: Color.fromARGB(255, 50, 54, 69),
-                            widh: 0.32,
+                            widh: 0.3,
                             height: 0.05,
                             icon: Icons.mail,
                             iconColor: Colors.grey,
@@ -83,7 +77,7 @@ class DesktopBody extends StatelessWidget {
                         const CustomTextField(
                             borderradius: 20,
                             bordercolor: Color.fromARGB(255, 50, 54, 69),
-                            widh: 0.32,
+                            widh: 0.3,
                             height: 0.05,
                             icon: Icons.lock,
                             iconColor: Colors.grey,
@@ -94,7 +88,7 @@ class DesktopBody extends StatelessWidget {
                         WSizedBox(wval: 0, hval: 0.04),
                         CustomButton(
                           buttontext: 'Login',
-                          width: 0.32,
+                          width: 0.3,
                           height: 0.05,
                           bordercolor: Color.fromARGB(255, 29, 144, 244),
                           borderradius: 25,
@@ -158,13 +152,13 @@ class MobileBody extends StatelessWidget {
                   child: TextWidget(
                     text: '  School Ai',
                     textcolor: Colors.white,
-                    textsize: MediaQuery.of(context).size.width * 0.08,
+                    textsize: MediaQuery.of(context).size.width * 0.07,
                     fontWeight: FontWeight.w800,
                   ),
                 ),
-                WSizedBox(wval: 0.05, hval: 0.08),
+                WSizedBox(wval: 0.05, hval: 0.06),
                 Container(
-                  height: height * 0.4,
+                  height: height * 0.5,
                   width: width * 0.8,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -176,79 +170,83 @@ class MobileBody extends StatelessWidget {
                     child: Column(
                       children: [
                         WSizedBox(wval: 0.05, hval: 0),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            WSizedBox(wval: 0, hval: 0.01),
-                            Align(
-                              alignment: Alignment.centerLeft,
-                              child: TextWidget(
-                                text: 'Welcome Back',
-                                textcolor: Colors.grey,
-                                textsize:
-                                    MediaQuery.of(context).size.width * 0.05,
-                                fontWeight: FontWeight.normal,
-                              ),
-                            ),
-                            WSizedBox(wval: 0, hval: 0.007),
-                            Row(
-                              crossAxisAlignment: CrossAxisAlignment.end,
-                              children: [
-                                TextWidget(
-                                  text: 'Login to your account',
-                                  textcolor: Colors.white,
+                        Padding(
+                          padding: const EdgeInsets.all(12.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              WSizedBox(wval: 0, hval: 0.01),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: TextWidget(
+                                  text: 'Welcome Back',
+                                  textcolor: Colors.grey,
                                   textsize:
-                                      MediaQuery.of(context).size.width * 0.06,
-                                  fontWeight: FontWeight.bold,
+                                      MediaQuery.of(context).size.width * 0.03,
+                                  fontWeight: FontWeight.normal,
                                 ),
-                                Container(
-                                  decoration: const BoxDecoration(
-                                    color: Colors.blue,
-                                    shape: BoxShape.circle,
+                              ),
+                              WSizedBox(wval: 0, hval: 0.007),
+                              Row(
+                                crossAxisAlignment: CrossAxisAlignment.end,
+                                children: [
+                                  TextWidget(
+                                    text: 'Login to your account',
+                                    textcolor: Colors.white,
+                                    textsize:
+                                        MediaQuery.of(context).size.width *
+                                            0.04,
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  height: 10,
-                                  width: 10,
-                                ),
-                              ],
-                            ),
-                            WSizedBox(wval: 0, hval: 0.03),
-                            WSizedBox(wval: 0, hval: 0.03),
-                            const CustomTextField(
-                                borderradius: 20,
-                                bordercolor: Color.fromARGB(255, 50, 54, 69),
-                                widh: 0.7,
+                                  Container(
+                                    decoration: const BoxDecoration(
+                                      color: Colors.blue,
+                                      shape: BoxShape.circle,
+                                    ),
+                                    height: 10,
+                                    width: 10,
+                                  ),
+                                ],
+                              ),
+                              WSizedBox(wval: 0, hval: 0.03),
+                              WSizedBox(wval: 0, hval: 0.03),
+                              const CustomTextField(
+                                  borderradius: 20,
+                                  bordercolor: Color.fromARGB(255, 50, 54, 69),
+                                  widh: 0.7,
+                                  height: 0.05,
+                                  icon: Icons.mail,
+                                  iconColor: Colors.grey,
+                                  hinttext: 'email',
+                                  hintColor: Colors.grey,
+                                  fontsize: 15,
+                                  obscureText: false),
+                              WSizedBox(wval: 0, hval: 0.02),
+                              const CustomTextField(
+                                  borderradius: 20,
+                                  bordercolor: Color.fromARGB(255, 50, 54, 69),
+                                  widh: 0.7,
+                                  height: 0.05,
+                                  icon: Icons.lock,
+                                  iconColor: Colors.grey,
+                                  hinttext: 'password',
+                                  hintColor: Colors.grey,
+                                  fontsize: 15,
+                                  obscureText: true),
+                              WSizedBox(wval: 0, hval: 0.03),
+                              CustomButton(
+                                buttontext: 'Login',
+                                width: 0.7,
                                 height: 0.05,
-                                icon: Icons.mail,
-                                iconColor: Colors.grey,
-                                hinttext: 'email',
-                                hintColor: Colors.grey,
-                                fontsize: 15,
-                                obscureText: false),
-                            WSizedBox(wval: 0, hval: 0.02),
-                            const CustomTextField(
-                                borderradius: 20,
-                                bordercolor: Color.fromARGB(255, 50, 54, 69),
-                                widh: 0.7,
-                                height: 0.05,
-                                icon: Icons.lock,
-                                iconColor: Colors.grey,
-                                hinttext: 'password',
-                                hintColor: Colors.grey,
-                                fontsize: 15,
-                                obscureText: true),
-                            WSizedBox(wval: 0, hval: 0.03),
-                            CustomButton(
-                              buttontext: 'Login',
-                              width: 0.7,
-                              height: 0.05,
-                              bordercolor: Color.fromARGB(255, 29, 144, 244),
-                              borderradius: 25,
-                              fontsize: 12,
-                              fontweight: FontWeight.bold,
-                              fontcolor: Colors.white,
-                              onPressed: () {},
-                            ),
-                          ],
+                                bordercolor: Color.fromARGB(255, 29, 144, 244),
+                                borderradius: 25,
+                                fontsize: 12,
+                                fontweight: FontWeight.bold,
+                                fontcolor: Colors.white,
+                                onPressed: () {},
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),

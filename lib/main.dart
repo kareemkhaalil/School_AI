@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    LoginRepoImpl().login('admin', '12345');
+    LoginRepoImpl().login("admin", "12345");
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'School_AI1',
