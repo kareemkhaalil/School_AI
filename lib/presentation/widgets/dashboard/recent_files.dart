@@ -1,9 +1,7 @@
-import 'package:school_ai/models/RecentFile.dart';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../../../constants.dart';
+import 'package:school_ai/old/constants.dart';
+import 'package:school_ai/old/models/RecentFile.dart';
 
 class RecentFiles extends StatelessWidget {
   const RecentFiles({

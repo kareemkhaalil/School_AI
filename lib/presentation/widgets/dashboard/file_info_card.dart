@@ -1,8 +1,7 @@
-import 'package:school_ai/models/MyFiles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-import '../../../constants.dart';
+import 'package:school_ai/old/constants.dart';
+import 'package:school_ai/old/models/MyFiles.dart';
 
 class FileInfoCard extends StatelessWidget {
   const FileInfoCard({

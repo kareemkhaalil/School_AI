@@ -1,12 +1,12 @@
-import 'package:school_ai/responsive.dart';
-import 'package:school_ai/screens/dashboard/components/my_fields.dart';
+import 'package:school_ai/old/responsive.dart';
+import 'package:school_ai/presentation/widgets/dashboard/header.dart';
+import 'package:school_ai/presentation/widgets/dashboard/my_fields.dart';
+import 'package:school_ai/presentation/widgets/dashboard/recent_files.dart';
+import 'package:school_ai/presentation/widgets/dashboard/storage_details.dart';
+
 import 'package:flutter/material.dart';
 
-import '../../constants.dart';
-import 'components/header.dart';
-
-import 'components/recent_files.dart';
-import 'components/storage_details.dart';
+import '../../old/constants.dart';
 
 class DashboardScreen extends StatelessWidget {
   @override

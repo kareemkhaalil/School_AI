@@ -1,10 +1,10 @@
-import 'package:school_ai/controllers/MenuAppController.dart';
-import 'package:school_ai/responsive.dart';
-import 'package:school_ai/screens/dashboard/dashboard_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:school_ai/old/controllers/MenuAppController.dart';
+import 'package:school_ai/old/responsive.dart';
+import 'package:school_ai/presentation/views/dashboard_screen.dart';
 
-import 'components/side_menu.dart';
+import '../widgets/main_screen/side_menu.dart';
 
 class MainScreen extends StatelessWidget {
   @override

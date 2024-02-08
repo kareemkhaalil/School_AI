@@ -1,10 +1,9 @@
-import 'package:school_ai/controllers/MenuAppController.dart';
-import 'package:school_ai/responsive.dart';
+import 'package:school_ai/old/constants.dart';
+import 'package:school_ai/old/controllers/MenuAppController.dart';
+import 'package:school_ai/old/responsive.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-
-import '../../../constants.dart';
 
 class Header extends StatelessWidget {
   const Header({
