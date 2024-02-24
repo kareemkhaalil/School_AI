@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:school_ai/core/utils/constants.dart';
 
 // ignore_for_file: prefer_const_constructors
 class CustomButton extends StatelessWidget {
@@ -64,13 +65,12 @@ class CustomButton extends StatelessWidget {
           children: [
             Text(
               buttontext,
-              style: GoogleFonts.ubuntu(
-                textStyle: TextStyle(
-                  color: fontcolor,
-                  letterSpacing: .5,
-                  fontWeight: fontweight,
-                  fontSize: fontsize,
-                ),
+              style: TextStyle(
+                fontFamily: cairo,
+                color: fontcolor,
+                letterSpacing: .8,
+                fontWeight: fontweight,
+                fontSize: fontsize,
               ),
             ),
             if (icon != null)

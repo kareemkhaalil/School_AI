@@ -21,6 +21,7 @@ class ServerFailure extends Failure {
             e.response!.statusCode!, e.response!.data);
       case DioExceptionType.cancel:
         return ServerFailure(message: 'Request cancelled');
+
       case DioExceptionType.unknown:
         if (e.message!.contains(
           'SocketException',
@@ -53,5 +54,15 @@ class ServerFailure extends Failure {
         message: "Opps Ther was an Error, Pleasy try later!",
       );
     }
+  }
+}
+
+class AuthinFailure extends Failure {
+  AuthinFailure({required String message}) : super(message);
+
+  factory AuthinFailure.fromResponse(dynamic response) {
+    return AuthinFailure(
+      message: " هناك خطأ في اسم المستخدم و كلمة المرور أو الحساب غير موجود ",
+    );
   }
 }
