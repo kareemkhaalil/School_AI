@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:equatable/equatable.dart';
 import 'package:go_router/go_router.dart';
+import 'package:school_ai/core/utils/app_router.dart';
 import 'package:school_ai/core/utils/service_locator.dart';
 import 'package:school_ai/data/repositories/auth_repo/login_repo.dart';
 import 'package:school_ai/data/repositories/hive_repo/hive_repo.dart';
@@ -20,6 +21,7 @@ class AuthLoginCubit extends Cubit<AuthLoginState> {
   Future<void> login(
     name,
     password,
+    context,
   ) async {
     emit(AuthLoginLoading());
 
@@ -45,6 +47,13 @@ class AuthLoginCubit extends Cubit<AuthLoginState> {
 
   refresh() {
     emit(AuthLoginInitial());
+  }
+
+  goToAddStudent(context) {
+    GoRouter.of(context).push(
+      AppRouterPath.addStudent,
+    );
+    emit(GoToAddStudent());
   }
 
   void showErrorDialog(BuildContext context, String message) {

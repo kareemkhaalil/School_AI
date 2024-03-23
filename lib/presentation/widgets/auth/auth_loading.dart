@@ -115,10 +115,6 @@ class AuthLoading extends StatelessWidget {
                                 onPressed: () {
                                   print(userController.text);
                                   print(passwordController.text);
-                                  authCubit.login(
-                                    userController.text,
-                                    passwordController.text,
-                                  );
                                 },
                               ),
                             ],

@@ -36,3 +36,5 @@ final class AuthLoginValidationError extends AuthLoginState {
 }
 
 final class AuthLoginValid extends AuthLoginState {}
+
+final class GoToAddStudent extends AuthLoginState {}

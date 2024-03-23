@@ -11,13 +11,19 @@ class FormValidatorCubit extends Cubit<FormValidatorState> {
     String name = '',
     //String school = '',
     String city = '',
+    int idNum = 0,
+    String dateOfBirth = '',
   }) {
-    emit(state.copyWith(
-      email: email,
-      name: name,
-      //school: school,
-      city: city,
-    ));
+    emit(
+      state.copyWith(
+        email: email,
+        name: name,
+        //school: school,
+        city: city,
+        idNum: idNum,
+        dateOfBirth: dateOfBirth,
+      ),
+    );
   }
 
   void updateEmail(String? email) {
@@ -34,6 +40,22 @@ class FormValidatorCubit extends Cubit<FormValidatorState> {
 
   void updateName(String? name) {
     emit(state.copyWith(name: name));
+  }
+
+  void updateIdNum(int? idNum) {
+    emit(
+      state.copyWith(
+        idNum: idNum,
+      ),
+    );
+  }
+
+  void updateDateOfBirth(String? dateOfBirth) {
+    emit(
+      state.copyWith(
+        dateOfBirth: dateOfBirth,
+      ),
+    );
   }
 
   // void updateAddress(String? school) {

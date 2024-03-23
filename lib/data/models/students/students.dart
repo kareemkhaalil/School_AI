@@ -33,16 +33,10 @@ class Students extends Equatable {
   //       'actionDone': actionDone,
   //     };
 
-  // /// `dart:convert`
-  // ///
-  // /// Parses the string and returns the resulting Json object as [Students].
   // factory Students.fromJson(String data) {
   //   return Students.fromMap(json.decode(data) as Map<String, dynamic>);
   // }
 
-  // /// `dart:convert`
-  // ///
-  // /// Converts [Students] to a JSON string.
   // String toJson() => json.encode(toMap());
 
   @override

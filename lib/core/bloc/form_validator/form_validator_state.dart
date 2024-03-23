@@ -9,6 +9,8 @@ abstract class FormValidatorState {
   final String name;
   final String school;
   final String city;
+  final int idNum;
+  final String dateOfBirth;
 
   const FormValidatorState({
     this.autovalidateMode = AutovalidateMode.disabled,
@@ -18,6 +20,8 @@ abstract class FormValidatorState {
     this.name = '',
     this.school = '',
     this.city = '',
+    this.idNum = 0,
+    this.dateOfBirth = '',
   });
 
   FormValidatorState copyWith({
@@ -28,6 +32,8 @@ abstract class FormValidatorState {
     String? name,
     String? school,
     String? city,
+    int? idNum,
+    String? dateOfBirth,
   });
 }
 
@@ -40,6 +46,8 @@ class FormValidatorUpdate extends FormValidatorState {
     String name = '',
     String school = '',
     String city = '',
+    int idNum = 0,
+    String dateOfBirth = '',
   }) : super(
           autovalidateMode: autovalidateMode,
           email: email,
@@ -48,6 +56,8 @@ class FormValidatorUpdate extends FormValidatorState {
           name: name,
           school: school,
           city: city,
+          idNum: idNum,
+          dateOfBirth: dateOfBirth,
         );
 
   @override
@@ -59,6 +69,8 @@ class FormValidatorUpdate extends FormValidatorState {
     String? name,
     String? school,
     String? city,
+    int? idNum,
+    String? dateOfBirth,
   }) {
     return FormValidatorUpdate(
       autovalidateMode: autovalidateMode ?? this.autovalidateMode,
@@ -67,6 +79,8 @@ class FormValidatorUpdate extends FormValidatorState {
       name: name ?? this.name,
       school: school ?? this.school,
       city: city ?? this.city,
+      idNum: idNum ?? this.idNum,
+      dateOfBirth: dateOfBirth ?? this.dateOfBirth,
     );
   }
 }
